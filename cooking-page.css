@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Caveat', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1400px;
+    padding-top: 2rem;
+    background: #ffebe0;
+}
+
+button {
+    cursor: pointer;
+}
+
+#container {
+    position: relative;
+    width: 1200px;
+    height: 1160px;
+    border-radius: 10px;
+    margin-top: 4rem;
+    background: url(images\ and\ videos/cooking-container.png);
+}
+
+.instruction-paper {
+    position: absolute;
+    bottom: 180px;
+    left: 160px;
+}
+
+.egg-basket {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.timer-body {
+    position: absolute;
+    top: 280px;
+    right: 72px;
+}
+
+.content-container {
+    position: absolute;
+    top: 160px;
+    left: 360px;
+    width: 360px;
+    height: 560px;
+    transform: rotate(6deg);
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+li {
+    margin: 1rem 0 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.timer-display {
+    position: absolute;
+    top: 455px;
+    right: 192px;
+    z-index: 2;
+
+    width: 140px;
+    height: 78px;
+    border-radius: 10px;
+
+    transform: rotate(-10deg);
+    background-color: #222;
+    color: #fefefe;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: monospace;
+    font-size: 2.8rem;
+}
+
+#startPauseBtn {
+    position: absolute;
+    top: 565px;
+    right: 250px;
+
+    width: 56px;
+    height: 24px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px #333;
+
+    transform: rotate(-10deg);
+    font-family: monospace;
+    color: #fefefe;
+}
+
+.btn-start {
+    background: rgb(48, 153, 48);
+}
+
+.btn-pause {
+    background: rgb(201, 190, 71);
+}
+
+#resetBtn {
+    position: absolute;
+    top: 554px;
+    right: 190px;
+
+    width: 56px;
+    height: 24px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px #333;
+
+    transform: rotate(-10deg);
+    background: rgb(118, 91, 100);
+    font-family: monospace;
+    color: #fefefe;
+}
+
+/* Đảm bảo timer container có transition mượt mà */
+.timer-container {
+    transition: transform 0.1s ease-out;
+}
+
+/* Style cho display khi timer hết giờ */
+.timer-finished {
+    color: #ff4757;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0.5;
+    }
+}
+
+.backtokitchen {
+    position: absolute;
+    top: 720px;
+    right: 128px;
+
+    font-size: 2.2rem;
+    text-decoration: none;
+    transform: rotate(-5deg);
+
+    color: rgb(103, 15, 27);
+    transition: 200ms ease-in-out;
+}
+
+.backtokitchen:hover {
+    scale: 1.05;
+}

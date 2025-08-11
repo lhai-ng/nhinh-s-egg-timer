@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Egg Timee</title>
+    <link rel="stylesheet" href="cooking-page.css">
+</head>
+<body>
+    <section id="container">
+        <img class="instruction-paper" src="images and videos/instruction-paper.png" alt="instruction paper">
+        <img class="egg-basket" src="images and videos/egg-basket.png" alt="egg basket">
+
+        <div class="timer-container">
+            <div class="timer-display" id="display"></div>
+            <img width="360px" class="timer-body" src="images and videos/timer.png" alt="timer">
+            <div>
+                <button class="btn btn-start" id="startPauseBtn" onclick="toggleTimer()">
+                    Start
+                </button>
+                <button class="btn btn-reset" id="resetBtn" onclick="resetTimer()">
+                    Reset
+                </button>
+            </div>
+        </div>
+
+        <a class="backtokitchen" href="index.html">
+            <h4>Back to kitchen →</h4>
+        </a>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="cooking-page.js"></script>
+</body>
+</html>
