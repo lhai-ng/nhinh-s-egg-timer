@@ -1,4 +1,3 @@
-import gsap from "./node_modules/gsap/index.js";
 const container = document.querySelector('#content');
 
 window.onload = () => {
